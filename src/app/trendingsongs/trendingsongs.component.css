@@ -1,0 +1,13 @@
+.trendingsongslayout {
+    display: flex;
+}
+.trendingsongslayout img {
+    width: 136px;
+    height: 136px;
+    padding: 20px;
+    border-radius: 8%;
+}
+.trendingsongsparent {
+    width: 1500px;
+    overflow-x: auto;
+}

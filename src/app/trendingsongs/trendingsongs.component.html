@@ -1,0 +1,17 @@
+<div class="trendingsongsparent">
+<h2>Trendingsongs</h2>
+<div class="parent-trending-songs">
+    <div class="trendingsongslayout">
+        <!-- <div *ngFor="let list of images">
+            <img [src]='list.path' [alt]='list.path'/>
+            <div class="title">{{list.title}}</div>
+        </div> -->
+        <div *ngFor="let list of dataaa;index as i; first as isFirst" (click)="check(list)">
+            <img [src]='list.image' [alt]='list.image'/>
+        </div>
+    </div>
+    </div>
+</div>
+<app-playwindow [(songs)]="songs" *ngIf="songs" >
+    {{songs.playlistName}}
+</app-playwindow>

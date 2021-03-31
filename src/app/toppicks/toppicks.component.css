@@ -1,0 +1,13 @@
+.topcardlayout {
+    display: flex;
+}
+.topcardlayout img {
+    width: 338px;
+    height: 187px;
+    padding: 20px;
+    border-radius: 8%;
+}
+.topicks-parent {
+    width: 1500px;
+    overflow-x: auto;
+}

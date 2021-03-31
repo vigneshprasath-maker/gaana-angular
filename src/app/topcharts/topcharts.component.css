@@ -1,0 +1,23 @@
+.topcardlayout {
+    display: flex;
+}
+.topcardlayout .innerbox {
+    width: 134px;
+    height: auto;
+    margin: 20px;
+    text-align: center;
+    color: white;
+}
+.toppickparent {
+
+    width: 1500px;
+    overflow-x: auto;
+}
+.innerinnerbox {
+    padding: 15px
+}
+
+.innerinnerbox a{
+    text-decoration: none;
+    color: white;
+}

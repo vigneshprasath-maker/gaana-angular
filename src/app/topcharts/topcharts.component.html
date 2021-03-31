@@ -1,0 +1,31 @@
+<!-- <div class="toppickparent">
+<h2>Topcharts</h2>
+<div class="parent-top-pick">
+    <div class="topcardlayout">
+        <div *ngFor="let list of images">
+            <img [src]='list.path' [alt]='list.path'/>
+            <div class="title">{{list.title}}</div>
+        </div>
+    </div>
+    </div>
+</div> -->
+
+<div class="toppickparent">
+    <h2>Topcharts</h2>
+    <div class="parent-top-pick">
+        <div class="topcardlayout">
+            <div *ngFor="let list of dataaa;let bgcolor of colorArray;index as i; first as isFirst" >
+                <!-- <img [src]='list.image' [alt]='list.image'/> -->
+                <div class="innerbox" [ngStyle]="{backgroundColor:getColor(i)}">
+                    <div class="innerinnerbox" >{{list.langauge}}</div>   
+                    
+                <div class="innerinnerbox">{{list.songCount}}</div> 
+                <div class="innerinnerbox"><a [href]='list.url'>Play</a></div>
+                    </div>
+            </div>
+            <!-- <li *ngFor="let user of dataaa; index as i; first as isFirst">
+                {{i}}/{{users.length}}. {{user}} <span *ngIf="isFirst">default</span>
+              </li> -->
+        </div>
+        </div>
+    </div>
